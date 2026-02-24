@@ -1,5 +1,5 @@
 /* ================================================
-   TIDY THEORY — Brand Stylesheet
+   TIDY THEORY, Brand Stylesheet
    Colors extracted from logo:
    Navy #1B3B5D | Teal #7ECBC1 | Gold #E8C860
    ================================================ */
@@ -233,7 +233,7 @@ h1, h2, h3, h4 {
    =================================== */
 .hero {
   position: relative;
-  padding: 10rem 0 6rem;
+  padding: 20rem 0 12rem;
   background: linear-gradient(170deg, var(--teal-bg) 0%, var(--white) 60%);
   overflow: hidden;
 }
@@ -276,6 +276,18 @@ h1, h2, h3, h4 {
 .sparkle--1 { top: 15%; right: 10%; width: 32px; height: 32px; animation: sparkle-float 6s ease-in-out infinite; }
 .sparkle--2 { top: 30%; right: 22%; width: 18px; height: 18px; animation: sparkle-float 8s ease-in-out infinite 1s; }
 .sparkle--3 { top: 50%; right: 8%; width: 14px; height: 14px; animation: sparkle-float 7s ease-in-out infinite 2s; }
+
+.sparkle-svg {
+  position: absolute;
+  color: var(--teal);
+  opacity: 0.25;
+}
+
+.sparkle-svg--1 { top: 22%; right: 38%; width: 14px; height: 14px; animation: sparkle-float 7s ease-in-out infinite 0.5s; }
+.sparkle-svg--2 { top: 62%; right: 14%; width: 20px; height: 20px; animation: sparkle-float 9s ease-in-out infinite 1.5s; }
+.sparkle-svg--3 { top: 78%; right: 28%; width: 14px; height: 14px; animation: sparkle-float 6.5s ease-in-out infinite 2.5s; }
+.sparkle-svg--4 { top: 12%; left: 4%; width: 16px; height: 16px; animation: sparkle-float 8s ease-in-out infinite 0.8s; }
+.sparkle-svg--5 { top: 72%; left: 7%; width: 12px; height: 12px; animation: sparkle-float 7.5s ease-in-out infinite 1.2s; }
 
 @keyframes sparkle-float {
   0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.2; }
@@ -1367,7 +1379,7 @@ details[open] .faq__chevron {
   .nav__toggle.open span:nth-child(2) { opacity: 0; }
   .nav__toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-  .hero { padding: 8rem 0 4rem; }
+  .hero { padding: 16rem 0 8rem; }
   .hero__title { font-size: 2.25rem; }
   .hero__subtitle { font-size: 1.05rem; }
 
