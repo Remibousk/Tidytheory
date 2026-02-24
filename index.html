@@ -22,11 +22,14 @@
       <ul class="nav__links" id="navLinks">
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#tidy-theory">The Tidy Theory</a></li>
-        <li><a href="#team">Our Team</a></li>
+        <li><a href="#team">Harry</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a href="https://tidytheory.bookingkoala.com/booknow" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Book Now</a>
+      <div class="nav__actions">
+        <a href="https://tidytheory.bookingkoala.com/login" class="btn btn--outline nav__login" target="_blank" rel="noopener">Login</a>
+        <a href="https://tidytheory.bookingkoala.com/booknow" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Book Now</a>
+      </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -379,21 +382,30 @@
         <h2 class="section__title">Recent Posts</h2>
       </div>
       <div class="blog__grid">
-        <a href="https://tidytheory.com.au/blog/5-ways-a-fortnightly-clean-reclaims-your-sydney-weekend" class="blog__card animate-in" target="_blank" rel="noopener">
+        <a href="blog/5-ways-a-fortnightly-clean-reclaims-your-sydney-weekend.html" class="blog__card animate-in">
+          <div class="blog__card-thumb">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&h=500&q=80" alt="Bright sunlit living room in a sparkling clean Eastern Suburbs home" loading="lazy"/>
+          </div>
           <div class="blog__card-content">
             <span class="blog__date">Feb 04, 2026</span>
             <h3 class="blog__title">5 Ways a Fortnightly Clean Reclaims Your Sydney Weekend</h3>
             <span class="blog__link">Read article &rarr;</span>
           </div>
         </a>
-        <a href="https://tidytheory.com.au/blog/how-to-choose-the-right-home-cleaning-service-for-you" class="blog__card animate-in" target="_blank" rel="noopener">
+        <a href="blog/how-to-choose-the-right-home-cleaning-service-for-you.html" class="blog__card animate-in">
+          <div class="blog__card-thumb">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&h=500&q=80" alt="Person carefully cleaning a home surface" loading="lazy"/>
+          </div>
           <div class="blog__card-content">
             <span class="blog__date">Feb 04, 2026</span>
             <h3 class="blog__title">How to Choose the Right Home Cleaning Service For You</h3>
             <span class="blog__link">Read article &rarr;</span>
           </div>
         </a>
-        <a href="https://tidytheory.com.au/blog/the-tidy-theory-why-we-use-a-50-point-checklist-for-home-cleaning" class="blog__card animate-in" target="_blank" rel="noopener">
+        <a href="blog/the-tidy-theory-why-we-use-a-50-point-checklist-for-home-cleaning.html" class="blog__card animate-in">
+          <div class="blog__card-thumb">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&h=500&q=80" alt="Bright modern kitchen with clean countertops in an Eastern Suburbs home" loading="lazy"/>
+          </div>
           <div class="blog__card-content">
             <span class="blog__date">Dec 28, 2025</span>
             <h3 class="blog__title">The Tidy Theory: Why We Use a 50-Point Checklist</h3>
@@ -402,7 +414,7 @@
         </a>
       </div>
       <div class="blog__more">
-        <a href="https://tidytheory.com.au/blog" class="btn btn--outline" target="_blank" rel="noopener">View All Posts</a>
+        <a href="blog/index.html" class="btn btn--outline">View All Posts</a>
       </div>
     </div>
   </section>
@@ -434,7 +446,7 @@
             <li><a href="#tidy-theory">The Tidy Theory</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://tidytheory.com.au/blog" target="_blank" rel="noopener">Blog</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -466,10 +478,17 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2026 Tidy Theory Home Cleaning. All rights reserved.</p>
+        <p>&copy; 2026 Tidy Theory Home Cleaning. All rights reserved. ABN: 98 135 223 323</p>
       </div>
     </div>
   </footer>
+
+  <!-- Floating Mobile CTA -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="https://tidytheory.bookingkoala.com/booknow" class="mobile-cta__btn" target="_blank" rel="noopener">
+      Book Now — 60 Seconds
+    </a>
+  </div>
 
   <script src="script.js"></script>
 </body>

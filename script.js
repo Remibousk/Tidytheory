@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initScrollAnimations();
   initSmoothScroll();
+  initMobileCta();
 });
 
 /* ---- Navigation ---- */
@@ -42,6 +43,22 @@ function initScrollAnimations() {
   );
 
   document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+}
+
+/* ---- Floating Mobile CTA ---- */
+function initMobileCta() {
+  const cta = document.getElementById('mobileCta');
+  const hero = document.getElementById('hero');
+  if (!cta || !hero) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      cta.classList.toggle('visible', !entry.isIntersecting);
+    },
+    { threshold: 0 }
+  );
+
+  observer.observe(hero);
 }
 
 /* ---- Smooth Scroll ---- */
